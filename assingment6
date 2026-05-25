@@ -1,0 +1,17 @@
+products = {
+   "laptop": 50000,
+   "mouse": 500,
+   "keyboard": 1500
+}
+print("laptop = 50000 \nmouse = 500\nkeyboard = 1500")
+choice = input("enter your product name :")
+qant = int(input("enter your product qantity :"))
+total = products[choice] * qant
+print(f"this is your total bill {total}")
+if total > 50000 :
+	dis = total * 10/100
+	print(f"you had 15 % discount so now your total bill is {dis}")
+elif total > 20000 :
+	dis = total * 15 / 100
+	print(f"you had 10 % discount so now your final bill is {dis}")
+print("______________________________")
