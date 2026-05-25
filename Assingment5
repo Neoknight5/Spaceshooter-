@@ -1,0 +1,12 @@
+file = input("enter your file full name :")
+val = file[-3:]
+if val == "exe" :
+	print("dangerous")
+elif val == "bot":
+	print("dangerous")
+elif val == ".py":
+	print("scirt file")
+elif val == "txt":
+	print("text file")
+else:
+	print("unknow file")
