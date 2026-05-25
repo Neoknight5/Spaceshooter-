@@ -1,0 +1,24 @@
+#mini banking system
+balance = 10000
+exit = True
+while exit :
+	work = input("enter your choice between \n withdraw / deposit / exit / check balance :")
+	if work == "exit" :
+		exit = False
+		print("exit is done")
+	elif work == "check balance":
+		print(f"this is your current balance :{balance}")
+	elif work == "deposit" :
+		deposit = int(input("enter your deposit amount :"))
+		if deposit < 0 :
+			print("this amount is too low ")
+		elif deposit > 0 :
+			balance = balance + deposit
+			print("your deposit is successfully done")
+	elif work == "withdraw" :
+		withdraw = int(input("enter your withdraw amount :"))
+		if withdraw <= balance :
+			print("your balance is too low to withdraw this amount")
+		else :
+			balance = balance - withdraw
+			print("your withdraw is successfully done")
